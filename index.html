@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>داواکردنی تایبەتمەندی - SnapchatPrime</title>
     <style>
-        /* ڕێکخستنی سەرەتایی */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -13,7 +12,6 @@
         }
         
         body {
-            /* باکگراوندێکی تاریک بە تێکەڵەی ڕەنگێکی کەم */
             background: radial-gradient(circle at top right, #1a1a2e, #0f0f1a, #05050a);
             color: #fff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,10 +19,8 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            overflow: hidden;
         }
         
-        /* دروستکردنی شێوەی ڕووناکی لە پشتەوە بۆ دەرخستنی شوشەکە */
         .bg-shape1, .bg-shape2 {
             position: absolute;
             border-radius: 50%;
@@ -34,47 +30,46 @@
         .bg-shape1 {
             width: 300px;
             height: 300px;
-            background: rgba(255, 235, 59, 0.15); /* ڕووناکی زەرد */
+            background: rgba(255, 235, 59, 0.15);
             top: -50px;
             right: -50px;
         }
         .bg-shape2 {
             width: 250px;
             height: 250px;
-            background: rgba(255, 255, 255, 0.05); /* ڕووناکی سپی */
+            background: rgba(255, 255, 255, 0.05);
             bottom: -50px;
             left: -50px;
         }
 
-        /* بۆکسی سەرەکی شوشەیی */
         .glass-container {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            padding: 40px;
+            border-radius: 15px;
+            padding: 30px;
             width: 90%;
-            max-width: 420px;
+            max-width: 400px;
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
             position: relative;
+            margin: 20px 0;
         }
 
-        /* دیزاینی ناونیشان */
         h2 {
             text-align: center;
             color: #fff;
-            margin-bottom: 25px;
-            font-size: 26px;
+            margin-bottom: 20px;
+            font-size: 24px;
             letter-spacing: 1px;
             text-shadow: 0 0 10px rgba(255, 235, 59, 0.3), 0 0 20px rgba(255, 235, 59, 0.2);
         }
         h2 span {
-            color: #ffeb3b; /* ڕەنگی زەرد بۆ وشەی ئێڵیت */
+            color: #ffeb3b;
         }
 
         .input-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         label {
@@ -87,18 +82,17 @@
 
         input, textarea {
             width: 100%;
-            padding: 14px;
+            padding: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
+            border-radius: 10px;
             background: rgba(0, 0, 0, 0.2);
             color: #fff;
-            font-size: 15px;
+            font-size: 14px;
             font-family: inherit;
             transition: all 0.3s ease;
             outline: none;
         }
 
-        /* کاتی کلیک کردن لەسەر بۆکسەکان */
         input:focus, textarea:focus {
             border-color: #ffeb3b;
             background: rgba(0, 0, 0, 0.4);
@@ -109,14 +103,13 @@
             color: #666;
         }
 
-        /* دوگمەی ناردن بە ستایلی مۆدێرن */
         button {
             width: 100%;
-            padding: 14px;
+            padding: 12px;
             background: linear-gradient(135deg, #ffeb3b, #fbc02d);
             color: #111;
             border: none;
-            border-radius: 12px;
+            border-radius: 10px;
             font-weight: bold;
             font-size: 16px;
             cursor: pointer;
@@ -151,7 +144,7 @@
         
         <div class="input-group">
             <label>تایبەتمەندی داواکراو:</label>
-            <textarea name="request" placeholder="چ تایبەتمەندییەکی نوێ بۆ بەرنامەکە زیاد بکەین؟..." rows="5" required></textarea>
+            <textarea name="request" placeholder="چ تایبەتمەندییەکی نوێ بۆ بەرنامەکە زیاد بکەین؟..." rows="4" required></textarea>
         </div>
         
         <button type="submit">ناردنی داواکاری</button>
