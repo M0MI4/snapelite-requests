@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داواکردنی تایبەتمەندی - SnapElite</title>
+    <style>
+        body {
+            background-color: #0f0f1a;
+            color: #fff;
+            font-family: 'Tahoma', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .glass-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            text-align: center;
+            color: #ffeb3b; 
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 235, 59, 0.5);
+        }
+        label {
+            font-size: 14px;
+            color: #ddd;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 20px 0;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            box-sizing: border-box;
+            outline: none;
+        }
+        input:focus, textarea:focus {
+            border: 1px solid #ffeb3b;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #888;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ffeb3b;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            box-shadow: 0 0 15px #ffeb3b;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+<div class="glass-container">
+    <h2>SnapElite Requests</h2>
+    <form action="https://formspree.io/f/xzdydppe" method="POST">
+        <label>ناوی تۆ:</label>
+        <input type="text" name="name" placeholder="ناوت لێرە بنووسە..." required>
+        
+        <label>ناوی بەکارهێنەری سناپچات (ئارەزوومەندانە):</label>
+        <input type="text" name="snapchat_user" placeholder="@username">
+
+        <label>تایبەتمەندی داواکراو:</label>
+        <textarea name="request" placeholder="چ تایبەتمەندییەکی نوێ بۆ سناپچات ئێڵیت زیاد بکەین؟..." rows="4" required></textarea>
+        
+        <button type="submit">ناردنی داواکاری</button>
+    </form>
+</div>
+
+</body>
+</html>
